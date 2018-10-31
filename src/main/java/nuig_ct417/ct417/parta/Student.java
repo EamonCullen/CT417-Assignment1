@@ -1,4 +1,4 @@
-package mainPackage;
+package nuig_ct417.ct417.parta;
 
 public class Student {
         private String name;

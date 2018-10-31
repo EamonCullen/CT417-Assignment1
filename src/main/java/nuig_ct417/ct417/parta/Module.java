@@ -1,4 +1,5 @@
-package mainPackage;
+
+package nuig_ct417.ct417.parta;
 
 public class Module {
     private String moduleName;
