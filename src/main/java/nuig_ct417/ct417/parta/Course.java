@@ -26,23 +26,23 @@ public class Course {
 		String toString = ("Course: ");
 		toString += this.courseName + "\n";
 		
-                toString += ("Modules: ");
+                toString += ("\n Modules: ");
 
                 for(int i = 1; i <this.modules.length; i++){
-		toString += this.modules[i] + " \n";
+		toString += this.modules[i] + " ";
                 }
                 
-		toString += ("Students: ");
+		toString += ("\n Students: ");
                 
                 for(int i = 1; i <this.students.length; i++){
 		toString += this.students[i] + " ";
                 }
 
-		toString += ("Start Date: ");
-		toString += this.startDate + "\n";
+		toString += ("\n Start Date: ");
+		toString += this.startDate + " ";
 
-		toString += ("End Date: ");
-		toString += this.endDate + "\n";
+		toString += ("\n End Date: ");
+		toString += this.endDate + " ";
 		
 		return toString;
 	}
