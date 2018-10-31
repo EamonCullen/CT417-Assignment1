@@ -27,6 +27,7 @@ public class Module {
                 }
 
 		toString += ("Courses: ");
+                for(int i = 1; i<this.courses.length; i++)
 		toString += this.courses + " \n";
 		
 		return toString;
