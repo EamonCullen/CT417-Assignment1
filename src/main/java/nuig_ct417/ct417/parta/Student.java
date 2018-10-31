@@ -37,7 +37,7 @@ public class Student {
 		
 		toString += ("\n Modules: ");
                 for(int i = 1; i<this.module.length; i++){
-		toString += this.module + " ";
+		toString += this.module[i] + " ";
                 }
 		return toString;
 	}
