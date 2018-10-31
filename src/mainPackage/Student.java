@@ -16,15 +16,35 @@ public class Student {
     	this.id = id;
     	this.course = course;
     	this.module = module;
-    	this.username = username;
     	username = generateUsername();
 }    
 
+	public String toString(Student student) {
+		String toString = ("Student: ");
+		toString += student.name;
+		
+		toString = ("Age: ");
+		toString += student.age;
+		
+		toString = ("DoB: ");
+		toString += student.dob;
+
+		toString = ("ID: ");
+		toString += student.id;
+		
+		toString = ("Course: ");
+		toString += student.course;
+		
+		toString = ("Modules: ");
+		toString += student.module;
+		
+		return toString;
+	}
+    
 	private String generateUsername(){
         String ageString = Integer.toString(age);
         return name += ageString;
     }
-	
 	public String getUsername(){
 		return username;
 	}

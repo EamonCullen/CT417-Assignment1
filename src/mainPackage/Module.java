@@ -8,10 +8,27 @@ public class Module {
     
 	public Module(String module, String moduleCode, String students[], String courses[]) {
 		this.moduleName = module;
+		this.moduleCode = moduleCode;
 		this.students = students;
 		this.courses = courses;
 	}
 
+	public String toString(Module module) {
+		String toString = ("Module: ");
+		toString += module.moduleName;
+		
+		toString = ("Code: ");
+		toString += module.moduleCode;
+		
+		toString = ("Students: ");
+		toString += module.students;
+
+		toString = ("Courses: ");
+		toString += module.courses;
+		
+		return toString;
+	}
+	
 	public String getModuleName() {
 		return moduleName;
 	}
