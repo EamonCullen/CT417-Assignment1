@@ -18,17 +18,17 @@ public class Module {
 		String toString = ("Module: ");
 		toString += this.moduleName + " \n";
 		
-		toString += ("Code: ");
-		toString += this.moduleCode + " \n";
+		toString += ("\n Code: ");
+		toString += this.moduleCode + " ";
 		
-		toString += ("Students: ");
+		toString += ("\n Students: ");
                 for(int i = 1; i<this.students.length; i++){
 		toString += this.students[i] + " ";
                 }
 
-		toString += ("Courses: ");
+		toString += ("\n Courses: ");
                 for(int i = 1; i<this.courses.length; i++)
-		toString += this.courses + " \n";
+		toString += this.courses[i] + " ";
 		
 		return toString;
 	}
@@ -61,5 +61,3 @@ public class Module {
 		this.courses = courses;
 	}
 }
-
-
