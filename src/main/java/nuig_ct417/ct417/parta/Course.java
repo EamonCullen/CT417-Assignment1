@@ -22,21 +22,21 @@ public class Course {
 		this.endDate = endDate;
 	}
 	
-	public String toString(Course course) {
+	public String toString() {
 		String toString = ("Course: ");
-		toString += course.courseName;
+		toString += this.courseName;
 		
 		toString = ("Modules: ");
-		toString += course.modules;
+		toString += this.modules;
 		
 		toString = ("Students: ");
-		toString += course.students;
+		toString += this.students;
 
 		toString = ("Start Date: ");
-		toString += course.startDate;
+		toString += this.startDate;
 
 		toString = ("End Date: ");
-		toString += course.endDate;
+		toString += this.endDate;
 		
 		return toString;
 	}
