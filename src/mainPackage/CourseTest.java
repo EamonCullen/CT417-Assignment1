@@ -1,0 +1,32 @@
+package mainPackage;
+
+import static org.junit.Assert.*;
+
+import org.joda.time.DateTime;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class CourseTest {
+	Course exampleCourse;
+	String[] exampleModules;
+
+	@Before
+	public void setUp() throws Exception {
+		exampleModules = new String[]{"CT417", "CT516"};
+		String[] exampleStudents = {"Jack", "Jill"};
+		DateTime exampleStartDate = new DateTime(2015, 3, 26, 12, 0, 0, 0);
+		DateTime exampleEndDate = new DateTime(2019, 3, 26, 12, 0, 0, 0);
+		exampleCourse = new Course("BCT", exampleModules, exampleStudents, exampleStartDate, exampleEndDate);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testGetModules() {
+		assertArrayEquals(exampleCourse.getModules(), exampleModules);
+	}
+
+}
