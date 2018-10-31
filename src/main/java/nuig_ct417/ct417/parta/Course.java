@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package nuig_ct417.ct417.parta;
 
 import org.joda.time.DateTime;
@@ -23,13 +28,13 @@ public class Course {
 		
                 toString += ("Modules: ");
 
-                for(int i = 1; i <=this.modules.length; i++){
+                for(int i = 1; i <this.modules.length; i++){
 		toString += this.modules[i] + " /n";
                 }
                 
 		toString += ("Students: ");
                 
-                for(int i = 1; i <=this.students.length; i++){
+                for(int i = 1; i <this.students.length; i++){
 		toString += this.students[i] + " ";
                 }
 
