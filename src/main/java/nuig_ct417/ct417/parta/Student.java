@@ -23,21 +23,21 @@ public class Student {
 		String toString = ("Student: ");
 		toString += this.name;
 		
-		toString += ("Age: ");
+		toString += ("\n Age: ");
 		toString += this.age;
 		
-		toString += ("DoB: ");
+		toString += ("\n DoB: ");
 		toString += this.dob;
 
-		toString += ("ID: ");
+		toString += ("\n ID: ");
 		toString += this.id;
 		
-		toString += ("Course: ");
+		toString += ("\n Course: ");
 		toString += this.course;
 		
-		toString += ("Modules: ");
+		toString += ("\n Modules: ");
                 for(int i = 1; i<this.module.length; i++){
-		toString += this.module + " \n";
+		toString += this.module + " ";
                 }
 		return toString;
 	}
