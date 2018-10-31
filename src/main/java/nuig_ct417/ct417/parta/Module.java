@@ -14,18 +14,18 @@ public class Module {
 		this.courses = courses;
 	}
 
-	public String toString(Module module) {
+	public String toString() {
 		String toString = ("Module: ");
-		toString += module.moduleName;
+		toString += this.moduleName;
 		
 		toString = ("Code: ");
-		toString += module.moduleCode;
+		toString += this.moduleCode;
 		
 		toString = ("Students: ");
-		toString += module.students;
+		toString += this.students;
 
 		toString = ("Courses: ");
-		toString += module.courses;
+		toString += this.courses;
 		
 		return toString;
 	}
