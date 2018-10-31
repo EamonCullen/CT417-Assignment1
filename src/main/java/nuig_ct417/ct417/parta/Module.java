@@ -16,16 +16,18 @@ public class Module {
 
 	public String toString() {
 		String toString = ("Module: ");
-		toString += this.moduleName;
+		toString += this.moduleName + " \n";
 		
-		toString = ("Code: ");
-		toString += this.moduleCode;
+		toString += ("Code: ");
+		toString += this.moduleCode + " \n";
 		
-		toString = ("Students: ");
-		toString += this.students;
+		toString += ("Students: ");
+                for(int i = 1; i<this.students.length; i++){
+		toString += this.students[i] + " ";
+                }
 
-		toString = ("Courses: ");
-		toString += this.courses;
+		toString += ("Courses: ");
+		toString += this.courses + " \n";
 		
 		return toString;
 	}
