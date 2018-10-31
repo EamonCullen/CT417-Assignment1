@@ -19,25 +19,26 @@ public class Student {
     	username = generateUsername();
 }    
 
-	public String toString(Student student) {
+	public String toString() {
 		String toString = ("Student: ");
-		toString += student.name;
+		toString += this.name;
 		
-		toString = ("Age: ");
-		toString += student.age;
+		toString += ("Age: ");
+		toString += this.age;
 		
-		toString = ("DoB: ");
-		toString += student.dob;
+		toString += ("DoB: ");
+		toString += this.dob;
 
-		toString = ("ID: ");
-		toString += student.id;
+		toString += ("ID: ");
+		toString += this.id;
 		
-		toString = ("Course: ");
-		toString += student.course;
+		toString += ("Course: ");
+		toString += this.course;
 		
-		toString = ("Modules: ");
-		toString += student.module;
-		
+		toString += ("Modules: ");
+                for(int i = 1; i<this.module.length; i++){
+		toString += this.module + " \n";
+                }
 		return toString;
 	}
     
