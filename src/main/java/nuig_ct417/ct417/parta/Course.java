@@ -24,12 +24,12 @@ public class Course {
 	
 	public String toString() {
 		String toString = ("Course: ");
-		toString += this.courseName + "/n";
+		toString += this.courseName + "\n";
 		
                 toString += ("Modules: ");
 
                 for(int i = 1; i <this.modules.length; i++){
-		toString += this.modules[i] + " /n";
+		toString += this.modules[i] + " \n";
                 }
                 
 		toString += ("Students: ");
@@ -39,10 +39,10 @@ public class Course {
                 }
 
 		toString += ("Start Date: ");
-		toString += this.startDate + "/n";
+		toString += this.startDate + "\n";
 
 		toString += ("End Date: ");
-		toString += this.endDate + "/n";
+		toString += this.endDate + "\n";
 		
 		return toString;
 	}
